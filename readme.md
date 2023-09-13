@@ -1,8 +1,14 @@
+(没时间写了，找时间再补充吧)
+
 #  Intelligent complementary diagnosis of degenerative OA
 
+##### Abstract
 
+退化性骨关节病又称骨关节炎，是一种退化性病变，系由于增龄、肥胖、劳损、创伤、关节先天性异常、关节畸形等诸多因素引起的关节软骨退化损伤、关节边缘和软骨下骨反应性增生。临床表现为缓慢发展的关节疼痛、压痛、僵硬、关节肿胀、活动受限和关节畸形等。
 
-# Abstract
+作为中医优势病种，骨关节病中医数据在统计特征选择中起到了关键作用。相比西医的X线、CT等光学诊断数据，中医的脉诊、舌色等“望闻问切”的数据能较好的反映部分骨关节病症的隐含细节，提供更可靠、更快捷且低成本的诊断结果，具有重要的分析价值和挖掘潜力。
+
+基于近年来中医在治疗骨关节病症方面的研究成果，该项目首先梳理了近年来有关退化性骨关节病的研究工作，然后从遵循中医整体思维的角度，提出了一种客观化、规范化、智能化的退化性骨关节病辅助诊断手段，即**结合人工智能技术，结合特征选择、深度学习的方法，从当地医院收集骨关节病患者的性状特征数据来训练神经网络，构建精准高效的骨关节病预测模型，并最终投入应用在小程序或网站平台等用户界面上。**该项目能为骨关节病人的症状评估提供参考，方便群众对骨关节炎的早期预防和诊断。
 
 
 
@@ -12,11 +18,25 @@
 
 # Related Work
 
+- 机器学习
+- 深度学习
+- 迁移学习
+- 多标签分类
+- 主成分分析法
+
 
 
 # Methodology
 
+- Step1.在公开数据集上预训练了多种常用分类模型进行效果比对
 
+![models_results_heart](C:\Users\lenovo\Documents\GitHub\Intelligent-Assisted-Diagnosis-of-Degenerative-OA\pic\models_results_heart.png)
+
+- Step2.将预训练模型的参数迁移到中医数据集上，发现随机森林效果最好
+  ![model_transfer](.\pic\model_transfer.png)
+- Step3.为了提高准确率，我们采用深度学习方法训练一个作用在中医数据集上的模型
+- Step4.为了减少参数，采用主成分分析法(PCA)进行降维
+- Step5.为了同时保证学习效率和参数量，选用自适应学习率方法最佳
 
 # Experiments
 
@@ -38,23 +58,29 @@
 
 对于变量名后带数字的，其含义都标记在第一位上，如果含义从0开始，则默认+1，例如ggjbwh1表示是否正常，ggjbwh2是否自汗，ggjbwh4表示冷汗，以此类推
 
-![img](file:///C:/Users/lenovo/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![img](./pic/dataset_introduction.png)
 
 ##### 1.3 数据集呈现
 
+![train_df](.\pic\train_df.png)
 
+### Pre-Process
 
-### Environments
+![pearson_TCM](.\pic\pearson_TCM.png)
 
+![pearson_pca_TCM](.\pic\pearson_pca_TCM.png)
 
-
-
-
-
+![pearson_heart](.\pic\pearson_heart.png)
 
 ### Results
 
+![Accuracy1](.\pic\Accuracy1.png)
 
+![Accuracy2](.\pic\Accuracy2.png)
+
+![Accuracy3](.\pic\Accuracy3.png)
+
+![Accuracy4](.\pic\Accuracy4.png)
 
 # Conclusion
 
