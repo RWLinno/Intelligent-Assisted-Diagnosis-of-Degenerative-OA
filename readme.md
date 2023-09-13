@@ -62,25 +62,25 @@
 
 ##### 1.3 数据集呈现
 
-![img](.\pic\train_df.png)
+![train_df](./pic/train_df.png)
 
 ### Pre-Process
 
-![img](.\pic\pearson_TCM.png)
+![pearson_TCM](./pic/pearson_TCM.png)
 
-![img](.\pic\pearson_pca_TCM.png)
+![pearson_pca_TCM](./pic/pearson_pca_TCM.png)
 
-![img](.\pic\pearson_heart.png)
+![pearson_heart](./pic/pearson_heart.png)
 
 ### Results
 
-![img](.\pic\Accuracy1.png)
+![Accuracy1](./pic/Accuracy1.png)
 
-![img](.\pic\Accuracy2.png)
+![Accuracy2](.\pic\Accuracy2.png)
 
-![img](.\pic\Accuracy3.png)
+![Accuracy3](./pic/Accuracy3.png)
 
-![img](.\pic\Accuracy4.png)
+![Accuracy4](./pic/Accuracy4.png)
 
 # Conclusion
 
