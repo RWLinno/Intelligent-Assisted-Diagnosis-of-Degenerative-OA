@@ -76,7 +76,7 @@
 
 ![Accuracy1](./pic/Accuracy1.png)
 
-![Accuracy2](.\pic\Accuracy2.png)
+![Accuracy2](./pic/Accuracy2.png)
 
 ![Accuracy3](./pic/Accuracy3.png)
 
